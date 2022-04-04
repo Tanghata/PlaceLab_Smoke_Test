@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Test" parallel="none">
+    <parameter name="browser" value="chrome"/>
+    <test name="PlaceLab Smoke Test Chrome">
+            <groups>
+            <run>
+                <include name="Positive"/>
+                <include name="Negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="placelab.tests.PlaceLabSmokeTest">
+            </class>
+        </classes>
+    </test>
+<!--    <test name="PlaceLab Smoke Test Edge">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Positive"/>-->
+<!--                <include name="Negative"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="placelab.tests.PlaceLabSmokeTest">-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
